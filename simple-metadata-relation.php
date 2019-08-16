@@ -30,16 +30,16 @@
 	if(is_plugin_active('simple-metadata/simple-metadata.php')){
 		//simple metadata is activated
 
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-output.php";
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-init-metaboxes.php";
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-output.php";
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-init-metaboxes.php";
 
 		//Load Resource
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-resources/smdre-resources-box.php";
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-resources/smdre-resources-output.php";
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-resources/smdre-resources-box.php";
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-resources/smdre-resources-output.php";
 
 		//Load bibliography
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-bibliography/smdre-bibliography-box.php";
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-bibliography/smdre-bibliography-output.php";
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-bibliography/smdre-bibliography-box.php";
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-bibliography/smdre-bibliography-output.php";
 
 	}else{
 		if(is_multisite()){
