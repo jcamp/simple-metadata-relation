@@ -30,12 +30,17 @@
 	if(is_plugin_active('simple-metadata/simple-metadata.php')){
 		//simple metadata is activated
 
-		//Load Metaboxes
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-init-metaboxes.php";
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-metaboxes/smdre-bibliography-box.php";
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-metaboxes/smdre-resources-box.php";
-
 		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-output.php";
+		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-init-metaboxes.php";
+
+		//Load Resource
+		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-resources/smdre-resources-box.php";
+		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-resources/smdre-resources-output.php";
+
+		//Load bibliography
+		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-bibliography/smdre-bibliography-box.php";
+		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-bibliography/smdre-bibliography-output.php";
+
 	}else{
 		if(is_multisite()){
 			add_action( 'network_admin_notices', smdre_show_error());

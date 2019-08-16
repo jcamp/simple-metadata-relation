@@ -38,7 +38,7 @@ function smdre_init_metaboxes() {
 		}
 
 		smdre_create_resources_box($post_type);
-		//smdre_create_bibliography_box($post_type);
+		smdre_create_bibliography_box($post_type);
 	}
 }
 // Hook from the symbiont 'custom-metadata' in simple-metadata
