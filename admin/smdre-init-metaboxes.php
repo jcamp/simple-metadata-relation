@@ -26,7 +26,7 @@ function smdre_init_metaboxes() {
 		$post_id = '';
 		if(isset($_GET['post'])){
 			$post_id = $_GET['post'];
-		}else if(isset($_POST['post_ID'])){ // it is used with update options
+		}else if(isset($_POST['post_ID'])){ // there is post_id when it's clicked on save post
 			$post_id = $_POST['post_ID'];
 		}
 
