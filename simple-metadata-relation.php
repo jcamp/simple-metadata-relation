@@ -29,7 +29,12 @@
 
 	if(is_plugin_active('simple-metadata/simple-metadata.php')){
 		//simple metadata is activated
-		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-init-metabox.php";
+
+		//Load Metaboxes
+		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-init-metaboxes.php";
+		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-metaboxes/smdre-bibliography-box.php";
+		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-metaboxes/smdre-resources-box.php";
+
 		include_once plugin_dir_path( __FILE__ ) . "smdre-related-content/smdre-output.php";
 	}else{
 		if(is_multisite()){
