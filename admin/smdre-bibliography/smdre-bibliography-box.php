@@ -30,7 +30,7 @@
 				'group'           => 'smdre_bibliography',
 				'label'						=> __('Citations', 'simple-metadata-relation'),
 				'description'			=> __('A citation or reference to another publication, web page, scholarly article, etc', 'simple-metadata-relation'),
-				'placeholder'			=> 'Kübler-Ross, On Death and Dying 45–60.',
+				'placeholder'			=> 'http://example.com/article',
 				'multiple'				=> true
 		    )
 		 );

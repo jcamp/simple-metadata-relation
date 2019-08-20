@@ -20,13 +20,13 @@ function smdre_print_tags_bibliography($post_id){
 
    foreach($meta_values as $id => $meta_value){
      if(!empty($meta_value)){
-        $html .=  '
-        "'.$meta_value.'",';
+       $html	.=	"}"	==	$html[-1]	?	","	: "";
+       $html .=  '
+       {
+         "type": "CreativeWork",
+         "url":  "'.$meta_value.'"
+       }';
      }
-   }
-   if($html[-1] == ','){
-     // Delete the last comma or it will be an error in json-ld
-     $html = rtrim($html, ',');
    }
 
    $html .= "\n\t]";
