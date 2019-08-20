@@ -1,5 +1,7 @@
 <?php
 /**
+ * Print the metatags properties
+ *
  * @package smdre-bibliography
  * @subpackage smdre-bibliography/output
  * @since 0.1

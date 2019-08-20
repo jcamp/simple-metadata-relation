@@ -1,5 +1,7 @@
 <?php
 /**
+ * Print the metatags properties
+ *
  * @package smdre-resource
  * @subpackage smdre-resource/output
  * @since 0.1
