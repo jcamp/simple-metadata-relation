@@ -1,19 +1,19 @@
 <?php
 /**
-	* Print the metatags properties
-	*
-	* @package smdre-bibliography
-	* @subpackage smdre-bibliography/output
-	* @since 0.1
-	*/
+ * Print the metatags properties
+ *
+ * @package smdre-bibliography
+ * @subpackage smdre-bibliography/output
+ * @since 0.1
+ */
 
 
- /**
-	*
-	* @param 		$post_id used to get the values for this post in the table 'postmeta'
-	* @return		$metadata
-	* @since    0.1
-	*/
+/**
+ *
+ * @param 		$post_id used to get the values for this post in the table 'postmeta'
+ * @return		$metadata
+ * @since    0.1
+ */
 function smdre_print_tags_bibliography($post_id){
 
 	$metadata = [];
@@ -41,5 +41,5 @@ function smdre_print_tags_bibliography($post_id){
 		$metadata['citation']	=	$citations_metadata;
 	}
 
-  return $metadata;
- }
+	return $metadata;
+}

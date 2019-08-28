@@ -9,11 +9,11 @@
 
 
 /**
-	*
-	*	@param 		$post_id used to get the values for this post in the table 'postmeta'
-	*	@return		$metadata
-	*	@since    0.1
-	*/
+  *
+  *	@param 		$post_id used to get the values for this post in the table 'postmeta'
+  *	@return		$metadata
+  *	@since    0.1
+  */
 function smdre_print_tags_resources($post_id){
 
   // all keys of the metabox Resource
@@ -25,11 +25,8 @@ function smdre_print_tags_resources($post_id){
     'quizzes'   => 'Quiz'
   );
 
-	$metadata	=	[];
-	$resources_metadata	=	[];
-
-  $html = ",\n\t";
-  $html .= '"hasPart":  [';
+  $metadata	=	[];
+  $resources_metadata	=	[];
 
   //for every key of the metabox resource
   foreach( $resources as $resource => $learningResourceType){
@@ -45,19 +42,19 @@ function smdre_print_tags_resources($post_id){
       if(!empty($meta_value)){
       	//there is the meta_value for this row
 
-      	$resorce_metadata = [[
-      	'type'	=> 'CreativeWork',
-      	'url'		=>  $meta_value,
-      	'learningResourceType'	=>	$learningResourceType
-      	]];
-      	$resources_metadata	=	array_merge($resources_metadata, $resorce_metadata);
+        $resorce_metadata = [[
+        'type'	=> 'CreativeWork',
+        'url'		=>  $meta_value,
+        'learningResourceType'	=>	$learningResourceType
+        ]];
+        $resources_metadata	=	array_merge($resources_metadata, $resorce_metadata);
       }
     }
   }
 
-	if(!empty($resources_metadata)){
-		$metadata['hasPart']  = $resources_metadata;
-	}
+  if(!empty($resources_metadata)){
+  	$metadata['hasPart']  = $resources_metadata;
+  }
 
   return $metadata;
 }
