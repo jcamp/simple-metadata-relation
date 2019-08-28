@@ -12,7 +12,7 @@
  * @param string $post_type type of the post/cutom-post e.g. 'post', 'page', 'chapter'
  * @since    0.1
  */
- function smdre_create_bibliography_box($post_type){
+ 	function smdre_create_bibliography_box($post_type){
 
  		x_add_metadata_group(
  			'smdre_bibliography', // id
@@ -32,6 +32,6 @@
 				'description'			=> __('A citation or reference to another publication, web page, scholarly article, etc', 'simple-metadata-relation'),
 				'placeholder'			=> 'http://example.com/article',
 				'multiple'				=> true
-		    )
-		 );
-}
+		  )
+		);
+  }

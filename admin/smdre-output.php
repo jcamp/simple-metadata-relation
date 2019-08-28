@@ -17,6 +17,7 @@ defined ("ABSPATH") or die ("No script assholes!");
  * Print the metadata tags for this plugin
  * Used in simple-metadata to print the tags
  *
+ * @return $metadata
  * @see simple-metadata
  * @since 0.1
  */
@@ -30,12 +31,12 @@ function smdre_print_tags (){
     $post_id = smdre_get_site_meta_id();
   }
 
-  $html = "";
+  $metadata = [];
 
-  $html .= smdre_print_tags_resources($post_id);
-  $html .= smdre_print_tags_bibliography($post_id);
+	$metadata = array_merge($metadata, smdre_print_tags_resources($post_id));
+	$metadata = array_merge($metadata, smdre_print_tags_bibliography($post_id));
 
-  echo $html;
+  return $metadata;
 }
 
 

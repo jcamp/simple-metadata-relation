@@ -1,38 +1,45 @@
 <?php
 /**
- * Print the metatags properties
- *
- * @package smdre-bibliography
- * @subpackage smdre-bibliography/output
- * @since 0.1
- */
+	* Print the metatags properties
+	*
+	* @package smdre-bibliography
+	* @subpackage smdre-bibliography/output
+	* @since 0.1
+	*/
 
+
+ /**
+	*
+	* @param 		$post_id used to get the values for this post in the table 'postmeta'
+	* @return		$metadata
+	* @since    0.1
+	*/
 function smdre_print_tags_bibliography($post_id){
-  $html = ",\n\t";
-  $html .= '"citation":  [';
 
-  $meta_values = get_post_meta($post_id, 'smdre_bibliography_citations' );
+	$metadata = [];
+	$citations_metadata = [];
 
-  if(empty($meta_values)){
-   //There isn't post-meta row
-   return;
-  }
+	$meta_values = get_post_meta($post_id, 'smdre_bibliography_citations' );
 
-   foreach($meta_values as $id => $meta_value){
-     if(!empty($meta_value)){
-       $html	.=	"}"	==	$html[-1]	?	","	: "";
-       $html .=  '
-       {
-         "type": "CreativeWork",
-         "url":  "'.$meta_value.'"
-       }';
-     }
-   }
+	if(empty($meta_values)){
+		//There isn't post-meta row
+		return $metadata;
+	}
 
-   $html .= "\n\t]";
+	foreach($meta_values as $id => $meta_value){
+		if(!empty($meta_value)){
+			$citation_metadata	=	[[
+				'@type'	=>	'CreativeWork',
+				'url'		=>	$meta_value
+				]];
 
-   //If there aren't work example don't print nothing
-   $html = ",\n\t\"citation\":  [\n\t]" == $html ? ''	: $html;
+			$citations_metadata =	array_merge($citations_metadata, $citation_metadata);
+		}
+	}
 
-   return $html;
+	if(!empty($citations_metadata)){
+		$metadata['citation']	=	$citations_metadata;
+	}
+
+  return $metadata;
  }

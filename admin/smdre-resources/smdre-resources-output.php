@@ -8,7 +8,12 @@
  */
 
 
-
+/**
+	*
+	*	@param 		$post_id used to get the values for this post in the table 'postmeta'
+	*	@return		$metadata
+	*	@since    0.1
+	*/
 function smdre_print_tags_resources($post_id){
 
   // all keys of the metabox Resource
@@ -19,6 +24,9 @@ function smdre_print_tags_resources($post_id){
     'audios'    => 'Audio',
     'quizzes'   => 'Quiz'
   );
+
+	$metadata	=	[];
+	$resources_metadata	=	[];
 
   $html = ",\n\t";
   $html .= '"hasPart":  [';
@@ -35,23 +43,21 @@ function smdre_print_tags_resources($post_id){
 
     foreach($meta_values as $id => $meta_value){
       if(!empty($meta_value)){
-        //there is the meta_value for this row
+      	//there is the meta_value for this row
 
-        $html	.=	"}"	==	$html[-1]	?	","	: "";
-        $html .=  '
-        {
-          "type": "CreativeWork",
-          "url":  "'.$meta_value.'",
-          "learningResourceType": "'.$learningResourceType.'"
-        }';
+      	$resorce_metadata = [[
+      	'type'	=> 'CreativeWork',
+      	'url'		=>  $meta_value,
+      	'learningResourceType'	=>	$learningResourceType
+      	]];
+      	$resources_metadata	=	array_merge($resources_metadata, $resorce_metadata);
       }
     }
   }
 
-  $html .= "\n\t]";
+	if(!empty($resources_metadata)){
+		$metadata['hasPart']  = $resources_metadata;
+	}
 
-  //If there aren't work example don't print nothing
-  $html = ",\n\t\"hasPart\":  [\n\t]" == $html ? ''	: $html;
-
-  return $html;
+  return $metadata;
 }
