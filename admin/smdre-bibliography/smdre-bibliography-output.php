@@ -26,6 +26,7 @@ function smdre_print_tags_bibliography($post_id){
 		return $metadata;
 	}
 
+	// Fills the citations_metadata array with all the values
 	foreach($meta_values as $id => $meta_value){
 		if(!empty($meta_value)){
 			$citation_metadata	=	[[
@@ -37,6 +38,7 @@ function smdre_print_tags_bibliography($post_id){
 		}
 	}
 
+	// add citations to the metadata array
 	if(!empty($citations_metadata)){
 		$metadata['citation']	=	$citations_metadata;
 	}

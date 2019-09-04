@@ -1,41 +1,20 @@
 === Simple metadata relation ===
-Contributors: colomet,
+Contributors: colomet, davideC00
 Donate link: https://opencollective.com/mylanguageskills
-Tags: multisite, pressbooks, simple metadata, metadata, schema.org, rich snippets, wordpress-plugin,
-Requires at least: 5.2
+Tags: wordpress, simple metadata, metadata, relation
+Requires at least: 4.9.6
 Tested up to: 5.2.2
-Stable tag: 1.3
+Stable tag: 1.0
 Requires PHP: 5.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Gutenberg: compatible
 
 This plugin enhance [Simple metadata](https://github.com/my-language-skills/simple-metadata) with metametadata related metadata.
 
 == Description ==
 
-This plugin provides the ability to have XXX metafield with the XXX schema properties.
-
-
-== Front-page related content =
-
-
-* Properties
-  * Creative Work type
-    * **Added:** xxxxx property
-
-
-= Pages related content =
-
-* Properties
-  * Creative Work type
-    * **Added:** xxxx property
-
-
-= Posts and CPTs related content =
-
-  * Creative Work type
-    * **Added:** xxxx property
-
+This addon defines the relationship between the content and other content, if any.
 
 == Installation ==
 
@@ -77,7 +56,12 @@ As Simple metadata annotation is an extension of Simple metadata, visit the [Sim
 == Changelog ==
 
 = 1.0 =
-* Initial release.
+
+- Initial release
+- Resources
+- Bibliography
+- json-ld metadata
+
 
 
 == Upgrade Notice ==
