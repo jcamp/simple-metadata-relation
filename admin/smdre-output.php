@@ -7,7 +7,7 @@
  *
  * @package smdre-related-content
  * @subpackage smdre-related-content/output
- * @since 0.1
+ * @since 1.0
  */
 
 defined ("ABSPATH") or die ("No script assholes!");
@@ -19,7 +19,7 @@ defined ("ABSPATH") or die ("No script assholes!");
  *
  * @return $metadata
  * @see simple-metadata
- * @since 0.1
+ * @since 1.0
  */
 function smdre_print_tags (){
 

@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://github.com/my-language-skills/simple-metadata-relation
- * @since             0.1
+ * @since             1.0
  * @package           simple-metadata-relation
  *
  * @wordpress-plugin
  * Plugin Name:       Simple Metadata - Relation
  * Plugin URI:        https://github.com/my-language-skills/simple-metadata-relation
  * Description:       Simple Metadata add-on for relation inforamtion of web-site content.
- * Version:           0.1
+ * Version:           1.0
  * Author:            My Language Skills team
  * Author URI:        https://github.com/my-language-skills/
  * License:           GPL 3.0
@@ -53,7 +53,7 @@
    * Internalization
    * Loads the MO file for plugin's translation.
    *
-   * @since 0.1
+   * @since 1.0
    *
    */
 	function smdre_show_error() {
@@ -75,7 +75,7 @@
   * Internalization
   * Loads the MO file for plugin's translation.
   *
-  * @since 0.1
+  * @since 1.0
   *
   */
  function smdre_load_plugin_textdomain() {

@@ -4,7 +4,7 @@
  *
  * @package smdre-resource
  * @subpackage smdre-resource/output
- * @since 0.1
+ * @since 1.0
  */
 
 
@@ -12,7 +12,7 @@
   *
   *	@param 		$post_id used to get the values for this post in the table 'postmeta'
   *	@return		$metadata
-  *	@since    0.1
+  *	@since    1.0
   */
 function smdre_print_tags_resources($post_id){
 

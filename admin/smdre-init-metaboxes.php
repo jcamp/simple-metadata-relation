@@ -7,7 +7,7 @@
  *
  * @package smdre-related-content
  * @subpackage smdre-related-content/init-smetabox
- * @since 0.1
+ * @since 1.0
  */
 
 defined ("ABSPATH") or die ("No script assholes!");
@@ -15,7 +15,7 @@ defined ("ABSPATH") or die ("No script assholes!");
 /**
  * Initialize mtaboxes for this plugin
  *
- * @since    0.1
+ * @since    1.0
  */
 function smdre_init_metaboxes($post_type) {
 	//for blog 1 in multisite installation we don't create metaboxes as we don't create settings page
