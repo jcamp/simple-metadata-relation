@@ -1,5 +1,17 @@
 # Changelog
 
+# 1.0.1
+* Metaboxes
+  * **Added** Translated from
+  * **Added** Translations
+
+* Properties
+  * Translated from
+    * **Added** translationOfWork
+  * Translations
+    * **Added** workTranslation
+
+
 # 1.0
 
 * Metaboxes

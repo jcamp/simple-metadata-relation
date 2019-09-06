@@ -22,7 +22,11 @@ function smdre_init_metaboxes($post_type) {
 	if (1 != get_current_blog_id() || !is_multisite() ){
 
 		smdre_create_resources_box($post_type);
+
 		smdre_create_bibliography_box($post_type);
+
+		smdre_create_translated_from_box($post_type);
+		smdre_create_translations_box($post_type);
 	}
 }
 // Hook from the symbiont 'custom-metadata' in simple-metadata

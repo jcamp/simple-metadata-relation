@@ -41,6 +41,10 @@
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-bibliography/smdre-bibliography-box.php";
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-bibliography/smdre-bibliography-output.php";
 
+		//Load Translated from
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-translated_from/smdre-translated_from-box.php";
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-translated_from/smdre-translated_from-output.php";
+
 	}else{
 		if(is_multisite()){
 			add_action( 'network_admin_notices', smdre_show_error());
