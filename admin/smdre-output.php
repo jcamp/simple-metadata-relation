@@ -36,6 +36,7 @@ function smdre_print_tags (){
   $metadata = array_merge($metadata, smdre_print_tags_resources($post_id));
   $metadata = array_merge($metadata, smdre_print_tags_bibliography($post_id));
   $metadata = array_merge($metadata, smdre_print_tags_translated_from($post_id));
+  $metadata = array_merge($metadata, smdre_print_tags_translations($post_id));
 
   return $metadata;
 }

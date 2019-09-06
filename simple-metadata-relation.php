@@ -37,13 +37,17 @@
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-resources/smdre-resources-box.php";
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-resources/smdre-resources-output.php";
 
-		//Load bibliography
+		//Load Bibliography
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-bibliography/smdre-bibliography-box.php";
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-bibliography/smdre-bibliography-output.php";
 
 		//Load Translated from
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-translated_from/smdre-translated_from-box.php";
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-translated_from/smdre-translated_from-output.php";
+
+		//Load Translations
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-translations/smdre-translations-box.php";
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-translations/smdre-translations-output.php";
 
 	}else{
 		if(is_multisite()){
