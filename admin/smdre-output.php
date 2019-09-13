@@ -21,7 +21,7 @@ defined ("ABSPATH") or die ("No script assholes!");
  * @see simple-metadata
  * @since 1.0
  */
-function smdre_print_tags (){
+function smdre_print_tags ($post_meta_type){
 
   //get the id of the current post
   $post_id = get_the_ID();
@@ -33,10 +33,10 @@ function smdre_print_tags (){
 
   $metadata = [];
 
-  $metadata = array_merge($metadata, smdre_print_tags_resources($post_id));
-  $metadata = array_merge($metadata, smdre_print_tags_bibliography($post_id));
-  $metadata = array_merge($metadata, smdre_print_tags_translated_from($post_id));
-  $metadata = array_merge($metadata, smdre_print_tags_translations($post_id));
+  $metadata = array_merge($metadata, smdre_get_json_ld_resources($post_id));
+  $metadata = array_merge($metadata, smdre_get_json_ld_bibliography($post_id));
+  $metadata = array_merge($metadata, smdre_get_json_ld_translated_from($post_id, $post_meta_type));
+  $metadata = array_merge($metadata, smdre_get_json_ld_translations($post_id));
 
   return $metadata;
 }

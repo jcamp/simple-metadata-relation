@@ -1,5 +1,12 @@
 # Changelog
 
+# 1.0.2
+* **Added** 'Relation' sub menu page
+  * Metaboxes
+    * **Added** Book type
+
+* **Added** automatic Translated from
+
 # 1.0.1
 * Metaboxes
   * **Added** Translated from

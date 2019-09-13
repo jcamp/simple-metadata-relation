@@ -14,7 +14,7 @@
  * @return		$metadata
  * @since    1.0
  */
-function smdre_print_tags_bibliography($post_id){
+function smdre_get_json_ld_bibliography($post_id){
 
 	$metadata = [];
 	$citations_metadata = [];

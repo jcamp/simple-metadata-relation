@@ -49,6 +49,9 @@
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-translations/smdre-translations-box.php";
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-translations/smdre-translations-output.php";
 
+		//Load settings related content
+		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-admin-settings.php";
+
 	}else{
 		if(is_multisite()){
 			add_action( 'network_admin_notices', smdre_show_error());

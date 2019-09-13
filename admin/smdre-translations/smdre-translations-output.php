@@ -15,7 +15,7 @@
 	*
   * @since    1.0.1
   */
-  function smdre_print_tags_translations($post_id){
+  function smdre_get_json_ld_translations($post_id){
 
     $metadata = [];
     $translations_metadata = [];

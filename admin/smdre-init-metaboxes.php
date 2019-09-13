@@ -24,8 +24,10 @@ function smdre_init_metaboxes($post_type) {
 		smdre_create_resources_box($post_type);
 
 		smdre_create_bibliography_box($post_type);
-
-		smdre_create_translated_from_box($post_type);
+		// Don't create the metabox if the book is a translation
+		if(empty(get_option('smdre_is_translated_from'))){
+			smdre_create_translated_from_box($post_type);
+		}
 		smdre_create_translations_box($post_type);
 	}
 }

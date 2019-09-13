@@ -14,7 +14,7 @@
   *	@return		$metadata
   *	@since    1.0
   */
-function smdre_print_tags_resources($post_id){
+function smdre_get_json_ld_resources($post_id){
 
   // all keys of the metabox Resource
   // resource name => corresponding learning resource type
