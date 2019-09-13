@@ -27,6 +27,8 @@
 
 	defined ("ABSPATH") or die ("No script assholes!");
 
+	require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
+
 	if(is_plugin_active('simple-metadata/simple-metadata.php')){
 		//simple metadata is activated
 
@@ -54,9 +56,9 @@
 
 	}else{
 		if(is_multisite()){
-			add_action( 'network_admin_notices', smdre_show_error());
+			add_action( 'network_admin_notices', 'smdre_show_error');
 		}else {
-			add_action( 'admin_notices', smdre_show_error());
+			add_action( 'admin_notices', 'smdre_show_error');
 		}
 	}
 

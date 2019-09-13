@@ -6,6 +6,7 @@
     * **Added** Book type
 
 * **Added** automatic Translated from
+* **Fixed** Errors when simple metadata was not installed
 
 # 1.0.1
 * Metaboxes
