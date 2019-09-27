@@ -16,7 +16,7 @@
  * Plugin Name:       Simple Metadata - Relation
  * Plugin URI:        https://github.com/my-language-skills/simple-metadata-relation
  * Description:       Simple Metadata add-on for relation inforamtion of web-site content.
- * Version:           1.0
+ * Version:           1.0.3
  * Author:            My Language Skills team
  * Author URI:        https://github.com/my-language-skills/
  * License:           GPL 3.0
@@ -53,6 +53,9 @@
 
 		//Load settings related content
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-admin-settings.php";
+
+		//Load Relation print
+		include_once plugin_dir_path( __FILE__ ) . "simple-metadata-relation-print.php";
 
 	}else{
 		if(is_multisite()){

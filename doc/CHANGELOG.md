@@ -1,5 +1,11 @@
 # Changelog
 
+# 1.0.3
+* **Added**
+  * Display icons of the related content (to the frontend) and
+    print its related content - Activities, Excercises, ...
+    (Requires books4languages-book-child-theme-for-pressbooks v1.4)
+
 # 1.0.2
 * **Added** 'Relation' sub menu page
   * Metaboxes

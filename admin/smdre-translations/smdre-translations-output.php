@@ -2,7 +2,7 @@
 /**
  * Print the metatags properties
  *
- * @package smdre-trasnlations
+ * @package smdre-translations
  * @subpackage smdre-trasnlations/output
  * @since 1.0.1
  */

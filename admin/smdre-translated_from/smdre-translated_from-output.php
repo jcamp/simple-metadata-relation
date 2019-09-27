@@ -2,8 +2,8 @@
 /**
  * Print the metatags properties
  *
- * @package smdre-trasnlated_from
- * @subpackage smdre-trasnlated_from/output
+ * @package smdre-translated_from
+ * @subpackage smdre-translated_from/output
  * @since 1.0.1
  */
 

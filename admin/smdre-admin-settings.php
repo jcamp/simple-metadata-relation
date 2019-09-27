@@ -23,7 +23,7 @@ add_action ('admin_menu', 'smdre_add_relation_settings', 100);
 function smdre_add_relation_settings () {
   if ((1 != get_current_blog_id() || !is_multisite()) && is_plugin_active('pressbooks/pressbooks.php')){
     //adding subapage to page of main plugin
-    add_submenu_page('smd_set_page', 'Relation', __('Relation', 'simple-metadata-relation'), 'manage_options', 'smdre_set_page', 'smdre_render_settings');
+    add_submenu_page('smd_set_page', 'Relation', __('Relation Metadata', 'simple-metadata-relation'), 'manage_options', 'smdre_set_page', 'smdre_render_settings');
 		smdre_add_book_type_box();
 	}
 }
