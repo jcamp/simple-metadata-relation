@@ -16,11 +16,12 @@
 		// set variables for choosen print location
 		if($location == "book-info"){
 			$table_name = $wpdb->prefix . 'posts';
-			$result =  $wpdb->get_row("SELECT ID FROM $table_name WHERE post_name = 'book-information';");
-			$result = get_object_vars($result);
-			$post_id= reset($result);
-			$setClassPrefix = "dropdown-relations-content-bookinfo";
-
+			$result =  $wpdb->get_row("SELECT ID FROM $table_name WHERE post_name = 'book-info' OR post_name = 'book-information';");
+			if (isset($result)){  // IF  book-info or book-information post found
+				$result = get_object_vars($result);
+				$post_id= reset($result);
+				$setClassPrefix = "dropdown-relations-content-bookinfo";
+			}
 		} else if($location == "chapter"){
 			$post_id =  get_the_id();
 			$setClassPrefix = "dropdown-relations-content-chapters";

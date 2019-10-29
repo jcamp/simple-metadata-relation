@@ -1,6 +1,6 @@
 # Simple Metadata Relation
 
-* Contributors: @colomet, @davideC00
+* Contributors: @colomet, @davideC00,@!ndeed
 * Donate link: https://opencollective.com/mylanguageskills
 * Tags: wordpress, simple metadata, metadata, relation
 * Requires at least: 4.9.6
