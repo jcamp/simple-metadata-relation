@@ -1,5 +1,5 @@
 === Simple metadata relation ===
-Contributors: colomet, davideC00
+Contributors: colomet, dcazzorla
 Donate link: https://opencollective.com/mylanguageskills
 Tags: wordpress, simple metadata, metadata, relation
 Requires at least: 4.9.6
