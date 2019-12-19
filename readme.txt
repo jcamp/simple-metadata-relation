@@ -55,6 +55,10 @@ As Simple metadata annotation is an extension of Simple metadata, visit the [Sim
 
 == Changelog ==
 
+* **MODIFICATIONS**
+ * Images optimiced to 16 colors png 8 ImageAlpha and ImageOptim)
+
+
 = 1.0 =
 
 - Initial release
