@@ -54,9 +54,11 @@
 		//Load settings related content
 		include_once plugin_dir_path( __FILE__ ) . "admin/smdre-admin-settings.php";
 
+//Simple metadata raletion print file php is moved to child theme so the include now is useless.
+/*
 		//Load Relation print
 		include_once plugin_dir_path( __FILE__ ) . "simple-metadata-relation-print.php";
-
+*/
 	}else{
 		if(is_multisite()){
 			add_action( 'network_admin_notices', 'smdre_show_error');
