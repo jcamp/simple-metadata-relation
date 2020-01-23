@@ -22,7 +22,7 @@ plugins/simple-metadata-relation                                # → Plugin roo
 │   ├── smdre-admin-settings.php                                # → Admin settings file php
 │   ├── smdre-init-metaboxes.php                                # → Init metaboxes file php
 │   └── smdre-output.php                                        # → Output file php
-├── assets                                                      # → Assets folder
+├── wp-assets                                                   # → Assets folder
 │   ├── outline_assignment_white_18dp.png                       # → Assignment white file png
 │   ├── outline_audiotrack_white_18dp.png                       # → Audiotrack white file png
 │   ├── outline_chrome_reader_mode_white_18dp.png               # → Chrome reader file png
@@ -38,5 +38,4 @@ plugins/simple-metadata-relation                                # → Plugin roo
 ├── license.txt                                                 # → License for WP
 ├── README.md                                                   # → Readme file for GitHub
 ├── readme.txt                                                  # → Readme file for WP
-├── simple-metadata-relation-print.php                          # → Plugin print file php
 └── simple-metadata-relation.php                                # → Plugin file php
